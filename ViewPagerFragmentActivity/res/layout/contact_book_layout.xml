@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ListView
+        android:id="@+id/contacts_ListView"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:background="#BF0000CC" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/chat_views_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </LinearLayout>
+
+</LinearLayout>

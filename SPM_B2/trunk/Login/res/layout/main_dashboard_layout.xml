@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="568dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <edu.purdue.spm.util.PullToRefreshListView
+                android:id="@+id/task_list_listview"
+                android:layout_width="match_parent"
+                android:layout_height="276dp"
+                android:layout_weight="0.39"
+                android:background="#8000CCFF"
+                android:visibility="visible" >
+            </edu.purdue.spm.util.PullToRefreshListView>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="351dp"
+                android:layout_height="121dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.60"
+                android:background="#903399FF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.25"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/task_information_panel_container"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#BF99FF99"
+                android:orientation="vertical"
+                android:padding="10dp" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#BF000099"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/weather_icon_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/weather_icon" />
+
+                        <TextView
+                            android:id="@+id/temperature_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="45°"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#FFFFFF"
+                            android:textSize="60sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/weather_time_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="11:29 pm EDT"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/weather_date_textview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Tue, 12 Mar 2013"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/weather_location_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="West Lafayette, IN"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="#BF003300"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/masterrefresh_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal|fill"
+                        android:text="Refresh"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/set_up_botton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set up"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/exit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exit"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/timeline_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:src="@drawable/timeline" />
+
+</LinearLayout>
